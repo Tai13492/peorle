@@ -1,10 +1,10 @@
 import React from "react"
+
 import Container from "../components/container"
 
-const LandingPage = () => (
+export default () => (
   <Container>
-    <p> Hello World </p>
+    <h1> About CSS Modules </h1>
+    <p> CSS Modules are cool </p>
   </Container>
 )
-
-export default LandingPage
