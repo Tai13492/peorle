@@ -2,35 +2,76 @@ import React from "react"
 import styles from "./navbar.module.css"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
-// import { fullWidthImagePng2 } from "../gatsby-images/index"
+import Peorle from "../../images/peorle.svg"
 
 const {
-  main_nav,
+  // main_nav,
   logo,
   navbar,
+  container,
+  tab_container,
+  logo_container,
+  tab_item,
+  logo_hidden,
+  // menu_mobile,
+  // toggle_button,
   //   menu_mobile,
   //   mobile_item,
   //   nav_links,
-  navbar_toggle,
+  // navbar_toggle,
 } = styles
-const Navbar = ({ data }) => {
-  console.log(data)
+const Navbar = () => {
+  // const [toggle, setToggle] = useState(false)
+  // const toggleStyle = toggle ? { display: "block" } : { display: "none" }
   return (
     <React.Fragment>
       <nav className={navbar}>
-        <span className={navbar_toggle} />
-        <a className={logo} />
-        <ul className={main_nav}>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
+        {/* <span className={toggle_button}>
+          <p onClick={() => setToggle(!toggle)}> I </p>
+        </span> */}
+        <div className={container}>
+          <div className={logo_container}>
+            <a className={logo_hidden}>
+              <Test name="logo" height={52} />
+            </a>
+            <a className={logo} style={{ marginLeft: "1.5rem" }}>
+              <img
+                src={Peorle}
+                alt="peorle"
+                height={20}
+                style={{ marginTop: 8 }}
+              />
+            </a>
+          </div>
+          <div className={tab_container}>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              หน้าหลัก
+            </p>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              ทำไมต้องพีออร์เล่
+            </p>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              ส่วนประกอบ
+            </p>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              โปรโมชั่น
+            </p>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              รีวิว
+            </p>
+            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+              ตัวแทนผู้จัดจำหน่าย
+            </p>
+          </div>
+          {/* <ul className={menu_mobile} style={toggleStyle}>
+            <li style={{ marginTop: 6 }}> หน้าหลัก </li>
+          </ul> */}
+        </div>
       </nav>
-      <Test name="logo" />
     </React.Fragment>
   )
 }
-const Test = ({ name }) => (
+const Test = ({ name, height }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -39,15 +80,14 @@ const Test = ({ name }) => (
         }
       }
     `}
-    render={data =>
-      console.log(data) || (
-        <Img
-          fixed={data[name].childImageSharp.fixed}
-          // className={className}
-          // style={style}
-        />
-      )
-    }
+    render={data => (
+      <Img
+        fixed={data[name].childImageSharp.fixed}
+        style={{ height: height, marginTop: 8 }}
+        // className={className}
+        // style={style}
+      />
+    )}
   />
 )
 

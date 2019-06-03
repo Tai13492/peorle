@@ -1,15 +1,14 @@
 import { graphql } from "gatsby"
 
-export const fullWidthImagePng2 = graphql`
-  fragment fullWidthImagePng2 on File {
+export const fullWidthImage = graphql`
+  fragment fullWidthImage on File {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid_withWebp
+        ...GatsbyImageSharpFluid
       }
     }
   }
 `
-
 
 export const fixed250 = graphql`
   fragment fixed250 on File {

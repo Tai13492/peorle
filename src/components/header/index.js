@@ -6,7 +6,7 @@ const Header = () => (
     <meta charset="utf-8" />
     <title> Hello World </title>
     <link
-      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+      href="https://fonts.googleapis.com/css?family=Kanit:200,300,400,500&display=swap"
       rel="stylesheet"
     />
   </Helmet>

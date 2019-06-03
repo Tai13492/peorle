@@ -6,6 +6,6 @@ export default ({ children }) => (
   <React.Fragment>
     <Header />
     <Navbar />
-    {children}
+    <div className="main_container">{children}</div>
   </React.Fragment>
 )
