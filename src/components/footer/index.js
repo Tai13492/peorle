@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./footer.module.css"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
+
 const {
   buy_container,
   buy,

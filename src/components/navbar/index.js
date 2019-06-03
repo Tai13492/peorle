@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./navbar.module.css"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, Link, navigate } from "gatsby"
 import Img from "gatsby-image"
 import Peorle from "../../images/peorle.svg"
 
@@ -31,20 +31,24 @@ const Navbar = () => {
         </span> */}
         <div className={container}>
           <div className={logo_container}>
-            <a className={logo_hidden}>
+            <Link className={logo_hidden} to="/">
               <Test name="logo" height={52} />
-            </a>
-            <a className={logo} style={{ marginLeft: "1.5rem" }}>
+            </Link>
+            <Link className={logo} style={{ marginLeft: "1.5rem" }} to="/">
               <img
                 src={Peorle}
                 alt="peorle"
                 height={20}
                 style={{ marginTop: 8 }}
               />
-            </a>
+            </Link>
           </div>
           <div className={tab_container}>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/")}
+            >
               หน้าหลัก
             </p>
             <p className={tab_item} style={{ marginLeft: "2rem" }}>
@@ -53,7 +57,11 @@ const Navbar = () => {
             <p className={tab_item} style={{ marginLeft: "2rem" }}>
               ส่วนประกอบ
             </p>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/promotion")}
+            >
               โปรโมชั่น
             </p>
             <p className={tab_item} style={{ marginLeft: "2rem" }}>
