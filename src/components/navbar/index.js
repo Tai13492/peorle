@@ -51,7 +51,11 @@ const Navbar = () => {
             >
               หน้าหลัก
             </p>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/why-peorle")}
+            >
               ทำไมต้องพีออร์เล่
             </p>
             <p className={tab_item} style={{ marginLeft: "2rem" }}>

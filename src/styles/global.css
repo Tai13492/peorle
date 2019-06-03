@@ -56,6 +56,10 @@ button.primary {
   flex-basis: 50%;
 }
 
+.itemy {
+  flex-basis: 50%;
+}
+
 .main_container {
   max-width: 1300px;
   margin: auto;
@@ -83,6 +87,10 @@ button.primary {
   }
 
   .sub_item2 {
+    flex-basis: 100%;
+  }
+
+  .itemy {
     flex-basis: 100%;
   }
 }

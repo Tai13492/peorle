@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./footer.module.css"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 const {
@@ -18,7 +18,11 @@ const Footer = () => (
         เท่านั้น
       </h2>
       <div className={button_group}>
-        <button className="primary" style={{ marginTop: 0 }}>
+        <button
+          className="primary"
+          style={{ marginTop: 0 }}
+          onClick={() => navigate("/promotion")}
+        >
           <span style={{ fontWeight: 160, fontSize: "1.2em" }}>โปรโมชั่น</span>
         </button>
         <button className={secondary}>
