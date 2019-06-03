@@ -9,7 +9,7 @@ const WhatIsCollagen = () => (
       <div style={{ textAlign: "center", marginTop: 24 }}>
         <Image />
       </div>
-      <h1 style={{ fontWeight: 300 }}> คอลลาเจนคืออะไร? </h1>
+      <h1 style={{ fontWeight: 400 }}> คอลลาเจนคืออะไร? </h1>
       <div style={{ textAlign: "left", maxWidth: 900, margin: "auto" }}>
         <p>
           หากคุณเป็นคนหนึ่งที่ยังคงสงสัยเคลือบแคลงใจกับสิ่งที่เรียกว่า

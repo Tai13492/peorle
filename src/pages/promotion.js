@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const Promotion = () => (
   <Container>
     <div style={{ textAlign: "center" }}>
-      <h1 style={{ fontWeight: 300 }}> โปรโมชั่น </h1>
+      <h1 style={{ fontWeight: 400 }}> โปรโมชั่น </h1>
       <div style={{ width: "80vw", margin: "24px auto", maxWidth: 800 }}>
         <Image />
       </div>
