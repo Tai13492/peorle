@@ -7,12 +7,43 @@ button:hover {
   cursor: pointer;
 }
 
+button.primary {
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 12px;
+  background-color: #135fa2;
+  background-image: linear-gradient(90deg, #135fa2, #6195c4);
+  border-radius: 20px;
+  min-width: 240px;
+  margin-top: 12px;
+}
+
 .content_container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
   flex-wrap: wrap;
+}
+
+.secondary_container {
+  display: flex;
+  margin: auto;
+  max-width: 900px;
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub_item1 {
+  flex-basis: 36%;
+}
+
+.sub_item2{
+  flex-basis: 64%;
 }
 
 .item1 {
@@ -44,6 +75,14 @@ button:hover {
   }
   .item2 {
     order: 1;
+    flex-basis: 100%;
+  }
+
+  .sub_item1{
+    flex-basis: 100%;
+  }
+
+  .sub_item2 {
     flex-basis: 100%;
   }
 }

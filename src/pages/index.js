@@ -23,7 +23,10 @@ const LandingPage = () => (
           "แคลเซียม"และ"แมกนีเซียม" รวมทั้งสิ้น 74 ชนิด
         </p>
       </div>
-      <div className="item2" style={{ textAlign: "center" }}>
+      <div
+        className="item2"
+        style={{ textAlign: "center", margin: "16px 0px" }}
+      >
         <Image name="peorle_product" />
       </div>
     </div>
@@ -49,35 +52,22 @@ const LandingPage = () => (
         เหมือนน้ำเปล่า
       </p>
       <p style={{ textAlign: "center" }}>
-        <button
-          style={{
-            color: "white",
-            textDecoration: "none",
-            border: "none",
-            padding: 12,
-            backgroundColor: "#135fa2",
-            backgroundImage: "linear-gradient(90deg,#135fa2,#6195c4)",
-            borderRadius: 20,
-            minWidth: 240,
-            marginTop: 12,
-          }}
-        >
+        <button className="primary">
           <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
             ทำไมต้องพีออร์เล่
           </span>
         </button>
       </p>
     </div>
-    <div
-      style={{ margin: "auto", maxWidth: 900, marginTop: 36, display: "flex" }}
-    >
-      <div style={{ flexBasis: "36%" }}>
+    <div className="secondary_container">
+      <div
+        className="sub_item1"
+        style={{ textAlign: "center", margin: "16px 0px" }}
+      >
         <Image name="collagen" />
       </div>
-      <div style={{ flexBasis: "64%" }}>
-        <h1 style={{ fontWeight: 400, marginBottom: 0, textAlign: "center" }}>
-          คอลลาเจนคืออะไร{" "}
-        </h1>
+      <div className="sub_item2">
+        <h1 style={{ fontWeight: 400, marginBottom: 0 }}>คอลลาเจนคืออะไร </h1>
 
         <p style={{ fontWeight: 300, marginTop: 8 }}>
           หากคุณเป็นคนหนึ่งที่ยังคงสงสัยเคลือบแคลงใจกับสิ่งที่เรียกว่า
@@ -86,19 +76,7 @@ const LandingPage = () => (
         </p>
 
         <p style={{ textAlign: "center" }}>
-          <button
-            style={{
-              color: "white",
-              textDecoration: "none",
-              border: "none",
-              padding: 12,
-              backgroundColor: "#135fa2",
-              backgroundImage: "linear-gradient(90deg,#135fa2,#6195c4)",
-              borderRadius: 20,
-              minWidth: 240,
-              marginTop: 12,
-            }}
-          >
+          <button className="primary">
             <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
               คอลลาเจนคืออะไร
             </span>
