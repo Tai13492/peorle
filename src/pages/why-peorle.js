@@ -107,6 +107,33 @@ const WhyPeorle = () => (
           <Image name="germany" />
         </div>
       </div>
+      <div style={{ margin: "auto", maxWidth: 700, marginTop: 36 }}>
+        <Image name="trust" />
+        <h1 style={{ fontWeight: 400, marginBottom: 0, textAlign: "center" }}>
+          พีออร์เล่คอลลาเจน มั่นใจ ปลอดภัย
+        </h1>
+        <p style={{ fontWeight: 300, marginTop: 8 }}>
+          หลายคนไม่กล้ารับประทานคอลลาเจน เพราะกลัวอ้วน รู้หรือไม่
+          คอลลาเจนแท้ไม่ได้ทำให้อ้วน เพราะอย่างที่กล่าวไปข้างต้น
+          คอลลาเจนคือสารอาหารจำพวกโปรตีน
+          ซึ่งหน้าที่หลักของโปรตีนคือเสริมสร้างเนื้อเยื่อ กล้ามเนื้อ กระดูก เอ็น
+          และข้อต่อ แต่เหตุผลที่บางคนรับประทานคอลลาเจนแล้วอ้วนนั้น
+          เนื่องจากคอลลาเจนบางยี่ห้อ
+          มักใส่สารเติมแต่งจำพวกน้ำตาลและแป้งในปริมาณมาก สารเหล่านี้
+          ที่มีผลข้างเคียงทำให้น้ำหนักขึ้นโดยไม่รู้ตัว แต่เราคือ
+          พีออร์เล่คอลลาเจน "เพียวคอลลาเจน" ที่ปราศจาก น้ำตาล แป้ง สีผสมอาหาร
+          หรือสารเติมแต่งอันตราย เช่น แป้ง น้ำตาล ทรานซามิน คุณจึงมั่นใจ
+          หมดปัญหาเรื่องน้ำหนักขึ้นหรือสารตกค้าง สะสมในร่างกาย
+          ซึ่งอาจทำให้เกิดโรคต่างๆ ขึ้นได้ในอนาคต
+        </p>
+        <p style={{ textAlign: "center", marginBottom: "1.5rem" }}>
+          <button className="primary">
+            <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
+              ส่วนประกอบ
+            </span>
+          </button>
+        </p>
+      </div>
     </div>
   </Container>
 )
@@ -119,6 +146,9 @@ const Image = ({ name }) => (
           ...fullWidthImage
         }
         germany: file(relativePath: { eq: "germany.jpg" }) {
+          ...fullWidthImage
+        }
+        trust: file(relativePath: { eq: "trust.jpg" }) {
           ...fullWidthImage
         }
       }
