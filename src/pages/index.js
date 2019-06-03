@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "../components/container"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 const LandingPage = () => (
@@ -52,7 +52,7 @@ const LandingPage = () => (
         เหมือนน้ำเปล่า
       </p>
       <p style={{ textAlign: "center" }}>
-        <button className="primary">
+        <button className="primary" onClick={() => navigate("/why-peorle")}>
           <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
             ทำไมต้องพีออร์เล่
           </span>
@@ -76,7 +76,10 @@ const LandingPage = () => (
         </p>
 
         <p style={{ textAlign: "center" }}>
-          <button className="primary">
+          <button
+            className="primary"
+            onClick={() => navigate("/what_is_collagen")}
+          >
             <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
               คอลลาเจนคืออะไร
             </span>
