@@ -19,3 +19,13 @@ export const fixed250 = graphql`
     }
   }
 `
+
+export const fixed24 = graphql`
+  fragment fixed24 on File {
+    childImageSharp {
+      fixed(height:24) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+`

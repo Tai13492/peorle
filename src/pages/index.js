@@ -103,8 +103,6 @@ const Image = ({ name }) => (
       <Img
         fixed={data[name].childImageSharp.fixed}
         style={{ borderRadius: 200 }}
-        // className={className}
-        // style={style}
       />
     )}
   />
