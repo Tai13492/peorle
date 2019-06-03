@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./navbar.module.css"
 import { graphql, StaticQuery, Link, navigate } from "gatsby"
 import Img from "gatsby-image"
@@ -13,6 +13,9 @@ const {
   logo_container,
   tab_item,
   logo_hidden,
+  mobile_container,
+  menu_mobile,
+
   // menu_mobile,
   // toggle_button,
   //   menu_mobile,
@@ -21,8 +24,12 @@ const {
   // navbar_toggle,
 } = styles
 const Navbar = () => {
-  // const [toggle, setToggle] = useState(false)
-  // const toggleStyle = toggle ? { display: "block" } : { display: "none" }
+  const [toggle, setToggle] = useState(false)
+  const toggleStyle = toggle ? { display: "block" } : { display: "none" }
+  const navigateTo = path => {
+    setToggle(false)
+    navigate(path)
+  }
   return (
     <React.Fragment>
       <nav className={navbar}>
@@ -86,11 +93,28 @@ const Navbar = () => {
               ตัวแทนผู้จัดจำหน่าย
             </p>
           </div>
-          {/* <ul className={menu_mobile} style={toggleStyle}>
-            <li style={{ marginTop: 6 }}> หน้าหลัก </li>
-          </ul> */}
+          <div className={mobile_container} onClick={() => setToggle(!toggle)}>
+            <div
+              style={{ width: 20, height: 4, borderTop: "2px solid black" }}
+            />
+            <div
+              style={{ width: 20, height: 4, borderTop: "2px solid black" }}
+            />
+            <div
+              style={{ width: 20, height: 4, borderTop: "2px solid black" }}
+            />
+          </div>
         </div>
       </nav>
+      <ul className={menu_mobile} style={toggleStyle}>
+        <li onClick={() => navigateTo("/")}> หน้าหลัก </li>
+        <li onClick={() => navigateTo("/why-peorle")}> ทำไมต้องพีออร์เล่ </li>
+        <li onClick={() => navigateTo("/ingredients")}> ส่วนประกอบ </li>
+        <li onClick={() => navigateTo("/what_is_collagen")}>คอลลาเจนคืออะไร</li>
+        <li onClick={() => navigateTo("/promotion")}> โปรโมชั่น </li>
+        <li onClick={() => navigateTo("/")}> รีวิว </li>
+        <li onClick={() => navigateTo("/")}> ตัวแทนผู้จัดจำหน่าย </li>
+      </ul>
     </React.Fragment>
   )
 }

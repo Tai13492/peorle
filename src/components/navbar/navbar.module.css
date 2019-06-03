@@ -96,6 +96,22 @@
   font-size: 24px;
 }
 
+.mobile_container {
+  display: none;
+}
+
+.menu_mobile {
+  list-style-type: none;
+  background-color: #f2f4f6;
+  font-size: 16px;
+  color: #24292e;
+  text-decoration: underline;
+  margin-top: 0px !important;
+  padding: 4px 20px;
+  margin-bottom: 4px !important;
+  text-align: center;
+}
+
 @media screen and (max-width: 1340px) {
   .container {
     padding-right: 2rem;
@@ -106,6 +122,11 @@
 @media screen and (max-width: 900px) {
   .tab_container {
     display: none;
+  }
+
+  .mobile_container {
+    display: block;
+    padding-top: 18px;
   }
 
   .logo_hidden {
