@@ -5,29 +5,31 @@ import Img from "gatsby-image"
 
 const LandingPage = () => (
   <Container>
-    <div className="content_container">
-      <div className="item1">
-        <h1 style={{ fontWeight: 400, marginBottom: 0 }}>
-          ผลิตภัณท์อาหารเสริม <br />
-          คอลลาเจน พีออร์เล่
-        </h1>
-        <h3 style={{ fontWeight: 400, marginTop: 0, marginBottom: 0 }}>
-          เราคือไฮโดรไลเซท คอลลาเจนไตรเปปไทด์ ไทป์ 2
-        </h3>
-        <p style={{ fontWeight: 300, marginTop: 8 }}>
-          คอลลาเจน จากพีออร์เล่ คอลลาเจน" อุดมด้วยไฮโดรไลเซส ซุปเปอร์ เปปไทด์
-          คอลลาเจน จากปลาทะเลน้ำลึก ประเทศเยอรมัน ปริมาณสูงถึง 10,000 มก.
-          ทำให้ดูดซึมได้เร็ว ประสิทธภาพสูง
-          พร้อมทั้งสารสกัดจากสาหร่ายแดงแหล่งรวมแคลเซียมจากธรรมชาติ 100%
-          มีการสะสมแร่ธาตุไว้มากถึง 72 ชนิด ยังมีแร่ธาตุสำคัญอย่าง
-          "แคลเซียม"และ"แมกนีเซียม" รวมทั้งสิ้น 74 ชนิด
-        </p>
-      </div>
-      <div
-        className="item2"
-        style={{ textAlign: "center", margin: "16px 0px" }}
-      >
-        <Image name="peorle_product" />
+    <div style={{ margin: "auto", maxWidth: 1000 }}>
+      <div className="content_container">
+        <div className="item1">
+          <h1 style={{ fontWeight: 400, marginBottom: 0 }}>
+            ผลิตภัณท์อาหารเสริม <br />
+            คอลลาเจน พีออร์เล่
+          </h1>
+          <h3 style={{ fontWeight: 400, marginTop: 0, marginBottom: 0 }}>
+            เราคือไฮโดรไลเซท คอลลาเจนไตรเปปไทด์ ไทป์ 2
+          </h3>
+          <p style={{ fontWeight: 300, marginTop: 8 }}>
+            คอลลาเจน จากพีออร์เล่ คอลลาเจน" อุดมด้วยไฮโดรไลเซส ซุปเปอร์ เปปไทด์
+            คอลลาเจน จากปลาทะเลน้ำลึก ประเทศเยอรมัน ปริมาณสูงถึง 10,000 มก.
+            ทำให้ดูดซึมได้เร็ว ประสิทธภาพสูง
+            พร้อมทั้งสารสกัดจากสาหร่ายแดงแหล่งรวมแคลเซียมจากธรรมชาติ 100%
+            มีการสะสมแร่ธาตุไว้มากถึง 72 ชนิด ยังมีแร่ธาตุสำคัญอย่าง
+            "แคลเซียม"และ"แมกนีเซียม" รวมทั้งสิ้น 74 ชนิด
+          </p>
+        </div>
+        <div
+          className="item2"
+          style={{ textAlign: "center", margin: "16px 0px" }}
+        >
+          <Image name="peorle_product" />
+        </div>
       </div>
     </div>
     <div style={{ margin: "auto", maxWidth: 700, marginTop: 36 }}>
