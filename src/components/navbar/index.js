@@ -64,6 +64,13 @@ const Navbar = () => {
             >
               โปรโมชั่น
             </p>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/what_is_collagen")}
+            >
+              คอลลาเจนคืออะไร
+            </p>
             <p className={tab_item} style={{ marginLeft: "2rem" }}>
               รีวิว
             </p>
