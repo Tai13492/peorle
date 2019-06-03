@@ -1,6 +1,6 @@
 import React from "react"
 import Container from "../components/container"
-import { graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 const WhyPeorle = () => (
@@ -127,7 +127,7 @@ const WhyPeorle = () => (
           ซึ่งอาจทำให้เกิดโรคต่างๆ ขึ้นได้ในอนาคต
         </p>
         <p style={{ textAlign: "center", marginBottom: "1.5rem" }}>
-          <button className="primary">
+          <button className="primary" onClick={() => navigate("/ingredients")}>
             <span style={{ fontWeight: 160, fontSize: "1.2em" }}>
               ส่วนประกอบ
             </span>

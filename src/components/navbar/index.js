@@ -58,7 +58,11 @@ const Navbar = () => {
             >
               ทำไมต้องพีออร์เล่
             </p>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/ingredients")}
+            >
               ส่วนประกอบ
             </p>
             <p

@@ -38,12 +38,29 @@ button.primary {
   align-items: center;
 }
 
+.ingredient_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .sub_item1 {
   flex-basis: 36%;
 }
 
 .sub_item2 {
   flex-basis: 64%;
+}
+
+.ingredient_item_data {
+  order: 1;
+  flex-basis: 64%;
+}
+
+.ingredient_item_img {
+  order: 2;
+  flex-basis: 36%;
 }
 
 .item1 {
@@ -78,6 +95,16 @@ button.primary {
     flex-basis: 100%;
   }
   .item2 {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .ingredient_item_data {
+    order: 2;
+    flex-basis: 100%;
+  }
+
+  .ingredient_item_img {
     order: 1;
     flex-basis: 100%;
   }
