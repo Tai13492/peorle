@@ -17,7 +17,15 @@ const {
 } = styles
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
-  const toggleStyle = toggle ? { display: "block" } : { display: "none" }
+  const toggleStyle = toggle
+    ? {
+        display: "block",
+        // width: "100%",
+        // margin: "auto",
+        paddingLeft: 42,
+        paddingRight: 32,
+      }
+    : { display: "none" }
   const navigateTo = path => {
     setToggle(false)
     navigate(path)
