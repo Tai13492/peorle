@@ -5,7 +5,6 @@ import Img from "gatsby-image"
 import Peorle from "../../images/peorle.svg"
 
 const {
-  // main_nav,
   logo,
   navbar,
   container,
@@ -15,13 +14,6 @@ const {
   logo_hidden,
   mobile_container,
   menu_mobile,
-
-  // menu_mobile,
-  // toggle_button,
-  //   menu_mobile,
-  //   mobile_item,
-  //   nav_links,
-  // navbar_toggle,
 } = styles
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -33,9 +25,6 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <nav className={navbar}>
-        {/* <span className={toggle_button}>
-          <p onClick={() => setToggle(!toggle)}> I </p>
-        </span> */}
         <div className={container}>
           <div className={logo_container}>
             <Link className={logo_hidden} to="/">
@@ -93,7 +82,11 @@ const Navbar = () => {
             >
               รีวิว
             </p>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              style={{ marginLeft: "2rem" }}
+              onClick={() => navigate("/work_with_us")}
+            >
               ตัวแทนผู้จัดจำหน่าย
             </p>
           </div>
@@ -117,7 +110,7 @@ const Navbar = () => {
         <li onClick={() => navigateTo("/what_is_collagen")}>คอลลาเจนคืออะไร</li>
         <li onClick={() => navigateTo("/promotion")}> โปรโมชั่น </li>
         <li onClick={() => navigateTo("/review")}> รีวิว </li>
-        <li onClick={() => navigateTo("/")}> ตัวแทนผู้จัดจำหน่าย </li>
+        <li onClick={() => navigateTo("/work_with_us")}>ตัวแทนผู้จัดจำหน่าย</li>
       </ul>
     </React.Fragment>
   )
