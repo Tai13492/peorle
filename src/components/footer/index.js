@@ -9,6 +9,7 @@ const {
   button_group,
   secondary,
   contact_container,
+  mobile_contact_container,
 } = styles
 const Footer = () => (
   <React.Fragment>
@@ -48,6 +49,26 @@ const Footer = () => (
           </div>
         </div>
       </div>
+    </div>
+    <div className={mobile_contact_container}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "center",
+          fontSize: 12,
+        }}
+      >
+        <p> Facebook </p>
+        <p> Line </p>
+        <p> 0123456789 </p>
+      </div>
+      {/* <p
+        style={{ fontSize: 12, marginTop: 8, marginBottom: 0, fontWeight: 400 }}
+      >
+        {" "}
+        Facebook: loremipsum Line:peorleofficial Tel:0123456789
+      </p> */}
     </div>
   </React.Fragment>
 )

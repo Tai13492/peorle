@@ -7,6 +7,10 @@ button:hover {
   cursor: pointer;
 }
 
+h1 {
+  color: #135fa2;
+}
+
 button.primary {
   color: white;
   text-decoration: none;
@@ -119,5 +123,11 @@ button.primary {
 
   .itemy {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .main_container {
+    margin-top: 76px;
   }
 }

@@ -66,7 +66,7 @@ const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        collagen: file(relativePath: { eq: "what-is-collagen.jpg" }) {
+        collagen: file(relativePath: { eq: "what_is_collagen.jpg" }) {
           ...fixed250
         }
       }

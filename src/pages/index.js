@@ -28,11 +28,12 @@ const LandingPage = () => (
           className="item2"
           style={{ textAlign: "center", margin: "16px 0px" }}
         >
-          <Image name="peorle_product" />
+          <Image name="peorle_product" isCircle={true} />
         </div>
       </div>
     </div>
     <div style={{ margin: "auto", maxWidth: 700, marginTop: 36 }}>
+      <Image name="threeinone" isCircle={false} />
       <h1 style={{ fontWeight: 400, marginBottom: 0, textAlign: "center" }}>
         ทานง่าย ย่อยง่าย ดูดซึมได้ดี ท้องไม่ผูก
       </h1>
@@ -66,7 +67,7 @@ const LandingPage = () => (
         className="sub_item1"
         style={{ textAlign: "center", margin: "16px 0px" }}
       >
-        <Image name="collagen" />
+        <Image name="collagen" isCircle={true} />
       </div>
       <div className="sub_item2">
         <h1 style={{ fontWeight: 400, marginBottom: 0 }}>คอลลาเจนคืออะไร </h1>
@@ -92,25 +93,30 @@ const LandingPage = () => (
   </Container>
 )
 
-const Image = ({ name }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        peorle_product: file(relativePath: { eq: "best-collagen.jpg" }) {
-          ...fixed250
+const Image = ({ name, isCircle }) => {
+  const style = isCircle
+    ? { borderRadius: 200, display: "block", margin: "auto" }
+    : { display: "block", margin: "auto" }
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          peorle_product: file(relativePath: { eq: "product.jpg" }) {
+            ...fixed250
+          }
+          collagen: file(relativePath: { eq: "what_is_collagen.jpg" }) {
+            ...fixed250
+          }
+          threeinone: file(relativePath: { eq: "3in1.jpg" }) {
+            ...fixed250
+          }
         }
-        collagen: file(relativePath: { eq: "what-is-collagen.jpg" }) {
-          ...fixed250
-        }
-      }
-    `}
-    render={data => (
-      <Img
-        fixed={data[name].childImageSharp.fixed}
-        style={{ borderRadius: 200 }}
-      />
-    )}
-  />
-)
+      `}
+      render={data => (
+        <Img fixed={data[name].childImageSharp.fixed} style={style} />
+      )}
+    />
+  )
+}
 
 export default LandingPage

@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 const WhyPeorle = () => (
   <Container>
     <div style={{ margin: "auto", maxWidth: 700, marginTop: 36 }}>
+      <Image name="why_collagen" />
       <h1 style={{ fontWeight: 400, marginBottom: 0, textAlign: "center" }}>
         ทำไมต้องพีออร์เล่
       </h1>
@@ -62,13 +63,13 @@ const WhyPeorle = () => (
       <div
         style={{
           padding: 24,
-          backgroundColor: "#393e45",
+          backgroundColor: "#135fa2",
+          fontWeight: 300,
           color: "white",
           width: "100vw",
         }}
       >
-        <h1 style={{ textAlign: "center", fontWeight: 200 }}>
-          {" "}
+        <h1 style={{ textAlign: "center", fontWeight: 200, color: "white" }}>
           พีออร์เล่คอลลาเจน <br />
           มีดีอย่างไร
         </h1>
@@ -151,12 +152,15 @@ const Image = ({ name }) => (
         trust: file(relativePath: { eq: "trust.jpg" }) {
           ...fullWidthImage
         }
+        why_collagen: file(relativePath: { eq: "why_collagen.jpg" }) {
+          ...fullWidthImage
+        }
       }
     `}
     render={data => (
       <Img
         fluid={data[name].childImageSharp.fluid}
-        style={{ maxWidth: "60%", margin: "auto" }}
+        style={{ width: "80%", margin: "auto", maxWidth: 400 }}
       />
     )}
   />

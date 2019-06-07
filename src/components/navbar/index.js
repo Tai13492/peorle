@@ -86,7 +86,11 @@ const Navbar = () => {
             >
               คอลลาเจนคืออะไร
             </p>
-            <p className={tab_item} style={{ marginLeft: "2rem" }}>
+            <p
+              className={tab_item}
+              onClick={() => navigate("/review")}
+              style={{ marginLeft: "2rem" }}
+            >
               รีวิว
             </p>
             <p className={tab_item} style={{ marginLeft: "2rem" }}>
@@ -112,7 +116,7 @@ const Navbar = () => {
         <li onClick={() => navigateTo("/ingredients")}> ส่วนประกอบ </li>
         <li onClick={() => navigateTo("/what_is_collagen")}>คอลลาเจนคืออะไร</li>
         <li onClick={() => navigateTo("/promotion")}> โปรโมชั่น </li>
-        <li onClick={() => navigateTo("/")}> รีวิว </li>
+        <li onClick={() => navigateTo("/review")}> รีวิว </li>
         <li onClick={() => navigateTo("/")}> ตัวแทนผู้จัดจำหน่าย </li>
       </ul>
     </React.Fragment>
