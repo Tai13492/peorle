@@ -12,6 +12,10 @@ const Review = () => (
       <Image name="review_3" />
       <Image name="review_4" />
       <Image name="review_5" />
+      <Image name="review_6" />
+      <Image name="review_7" />
+      <Image name="review_8" />
+      <Image name="review_9" />
     </div>
   </Container>
 )
@@ -33,6 +37,18 @@ const Image = ({ name }) => (
           ...fullWidthImage
         }
         review_5: file(relativePath: { eq: "review_5.jpg" }) {
+          ...fullWidthImage
+        }
+        review_6: file(relativePath: { eq: "review_6.jpg" }) {
+          ...fullWidthImage
+        }
+        review_7: file(relativePath: { eq: "review_7.jpg" }) {
+          ...fullWidthImage
+        }
+        review_8: file(relativePath: { eq: "review_8.jpg" }) {
+          ...fullWidthImage
+        }
+        review_9: file(relativePath: { eq: "review_9.jpg" }) {
           ...fullWidthImage
         }
       }

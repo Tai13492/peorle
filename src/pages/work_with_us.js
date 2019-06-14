@@ -93,6 +93,17 @@ const WorkWithUs = () => (
           จำกัด 🙏
         </div>
       </div>
+      <button
+        className="primary"
+        style={{ marginBottom: 36 }}
+        onClick={() =>
+          (window.location.href = "http://line.me/ti/p/~@628jmziy")
+        }
+      >
+        <span style={{ fontWeight: 160, fontSize: "1.2rem" }}>
+          สมัครเป็นตัวแทนจำหน่าย
+        </span>
+      </button>
     </div>
   </Container>
 )
