@@ -77,7 +77,8 @@ button.secondary {
     width: 100vw;
     text-align: center;
     height: 36px;
-    background-color: #f2f4f6;
+    background-color: #02b1e8;
+    color: white;
     padding: 4px;
   }
 

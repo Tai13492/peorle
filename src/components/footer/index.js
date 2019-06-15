@@ -2,6 +2,9 @@ import React from "react"
 import styles from "./footer.module.css"
 import { graphql, StaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
+import FacebookIcon from "../../images/facebook_icon.png"
+import LineIcon from "../../images/line_icon.png"
+import PhoneIcon from "../../images/phone_icon.png"
 
 const {
   buy_container,
@@ -76,9 +79,6 @@ const Footer = () => (
               }}
               className="hoverable"
               href="https://www.facebook.com/peorleshop/"
-              // onClick={() =>
-              //   (window.location.href = "https://www.facebook.com/peorleshop/")
-              // }
             >
               @peorleshop
             </a>
@@ -93,40 +93,36 @@ const Footer = () => (
           justifyContent: "space-around",
           alignItems: "center",
           fontSize: 12,
-          paddingLeft: "1.06rem",
-          paddingRight: "1.06rem",
+          textAlign: "center",
         }}
       >
-        <p>
-          FB:{" "}
+        <p style={{ marginTop: 0, marginBottom: 0 }}>
+          <img src={FacebookIcon} alt="facebook" style={{ float: "left" }} />
           <a
             href="https://www.facebook.com/peorleshop/"
-            style={{ color: "black" }}
+            style={{ color: "white", marginLeft: 2 }}
           >
             @peorleshop
           </a>
         </p>
-        <p>
-          Line:{" "}
-          <a href="http://line.me/ti/p/~@628jmziy" style={{ color: "black" }}>
+        <p style={{ marginTop: 0, marginBottom: 0 }}>
+          <img src={LineIcon} alt="line" style={{ float: "left" }} />{" "}
+          <a
+            href="http://line.me/ti/p/~@628jmziy"
+            style={{ color: "white", marginLeft: 2 }}
+          >
             {" "}
             @628jmziy{" "}
           </a>
         </p>
-        <p>
-          Tel:{" "}
-          <a href="tel:0841962097" style={{ color: "black" }}>
+        <p style={{ marginTop: 0, marginBottom: 0 }}>
+          <img src={PhoneIcon} alt="phone" style={{ float: "left" }} />
+          <a href="tel:0841962097" style={{ color: "white", marginLeft: 2 }}>
             {" "}
             084-196-2097{" "}
           </a>
         </p>
       </div>
-      {/* <p
-        style={{ fontSize: 12, marginTop: 8, marginBottom: 0, fontWeight: 400 }}
-      >
-        {" "}
-        Facebook: loremipsum Line:peorleofficial Tel:0123456789
-      </p> */}
     </div>
   </React.Fragment>
 )
