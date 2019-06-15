@@ -32,7 +32,7 @@ const Footer = () => (
         <button
           className={secondary}
           onClick={() => {
-            window.location.href = "http://line.me/ti/p/~@628jmziy"
+            window.location.href = "http://line.me/ti/p/~@peorle"
           }}
         >
           <span style={{ fontWeight: 160, fontSize: "1.2em" }}>สั่งซื้อ</span>
@@ -53,7 +53,7 @@ const Footer = () => (
             <div
               style={{ marginTop: 0, marginBottom: 4, verticalAlign: "middle" }}
               onClick={() =>
-                (window.location.href = "http://line.me/ti/p/~@628jmziy")
+                (window.location.href = "http://line.me/ti/p/~@peorle")
               }
             >
               <span
@@ -61,7 +61,7 @@ const Footer = () => (
                 className="hoverable"
               >
                 {" "}
-                @628jmziy
+                @peorle
               </span>{" "}
               <Image />
             </div>
@@ -96,7 +96,7 @@ const Footer = () => (
           textAlign: "center",
         }}
       >
-        <p style={{ marginTop: 0, marginBottom: 0 }}>
+        <p style={{ marginTop: 8, marginBottom: 8 }}>
           <img src={FacebookIcon} alt="facebook" style={{ float: "left" }} />
           <a
             href="https://www.facebook.com/peorleshop/"
@@ -105,17 +105,17 @@ const Footer = () => (
             @peorleshop
           </a>
         </p>
-        <p style={{ marginTop: 0, marginBottom: 0 }}>
+        <p style={{ marginTop: 8, marginBottom: 8 }}>
           <img src={LineIcon} alt="line" style={{ float: "left" }} />{" "}
           <a
-            href="http://line.me/ti/p/~@628jmziy"
+            href="http://line.me/ti/p/~@peorle"
             style={{ color: "white", marginLeft: 2 }}
           >
             {" "}
-            @628jmziy{" "}
+            @peorle{" "}
           </a>
         </p>
-        <p style={{ marginTop: 0, marginBottom: 0 }}>
+        <p style={{ marginTop: 8, marginBottom: 8 }}>
           <img src={PhoneIcon} alt="phone" style={{ float: "left" }} />
           <a href="tel:0841962097" style={{ color: "white", marginLeft: 2 }}>
             {" "}
