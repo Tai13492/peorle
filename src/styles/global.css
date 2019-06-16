@@ -124,7 +124,7 @@ button.primary {
   padding: 0px 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .close {

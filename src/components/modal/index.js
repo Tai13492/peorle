@@ -82,7 +82,12 @@ const Image = () => (
     render={data => (
       <Img
         fluid={data["work_with_us"].childImageSharp.fluid}
-        style={{ maxWidth: 500, maxHeight: 500 }}
+        style={{
+          maxWidth: 500,
+          maxHeight: 500,
+          display: "block",
+          margin: "auto",
+        }}
         // style={{ marginBottom: 20 }}
       />
     )}
