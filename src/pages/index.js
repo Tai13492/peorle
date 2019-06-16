@@ -1,10 +1,12 @@
 import React from "react"
 import Container from "../components/container"
+import Modal from "../components/modal"
 import { graphql, StaticQuery, navigate } from "gatsby"
 import Img from "gatsby-image"
 
 const LandingPage = () => (
   <Container>
+    <Modal />
     <div style={{ margin: "auto", maxWidth: 1000 }}>
       <div className="content_container">
         <div className="item1">
